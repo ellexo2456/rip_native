@@ -1,8 +1,8 @@
 import { FC, useState} from 'react'
 import { Col, Row, Spinner } from 'react-bootstrap'
 import { ITunesMusic, getMusicByName } from './modules/get-music-by-name'
-import { InputField } from './components/InputField'
-import { MusicCard } from './components/MusicCard'
+import InputField from './components/InputField/InputField'
+import MusicCard from './components/MusicCard/MusicCard'
 import './ITunesPage.css'
 
 const ITunesPage: FC = () => {
