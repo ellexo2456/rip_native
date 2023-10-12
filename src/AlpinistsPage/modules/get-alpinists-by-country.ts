@@ -1,5 +1,6 @@
 export interface IAlpinists {
     wrapperType: string
+    id: number
     country: string
     lifetime: string
     description: string

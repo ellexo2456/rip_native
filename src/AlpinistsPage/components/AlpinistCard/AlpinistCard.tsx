@@ -4,6 +4,7 @@ import './AlpinistCard.css'
 
 interface Props {
     wrapperType: string
+    id: number
     country: string
     lifetime: string
     description: string
@@ -12,21 +13,23 @@ interface Props {
     name: string
 }
 
-const AlpinistCard: FC<Props> = ({country, lifetime, description, imageRef, bigImageRef, name}) => (
-    <Card className="card">
-        <Card.Img className="cardImage" variant="top" src={imageRef} height={100} width={100}  />
-        <Card.Body>                
-            <div className="textStyle">
-                <Card.Title>{name}</Card.Title>
+const AlpinistCard: FC<Props> = ({ id, country, lifetime, description, imageRef, bigImageRef, name }) => (
+    <div>
+        <section>
+            <h1>{name}</h1>
+            <div className="img">
+                <a href="#"><img src="{{.alpinist.BigImageRef}}"
+                    alt="Img"/></a>
             </div>
-            <div className="textStyle">
-                <Card.Text>
-                    {description}
-                </Card.Text>
+            <div className="content">
+                {description}
             </div>
-            <Button className="cardButton" href="#" target="_blank" variant="primary">Открыть в ITunes</Button>
-        </Card.Body>
-    </Card>
+        </section>
+
+        <div className="attribution">
+            {country}
+        </div>
+    </div>
 )
 
 export default AlpinistCard;

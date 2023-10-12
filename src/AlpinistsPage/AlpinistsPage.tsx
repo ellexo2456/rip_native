@@ -1,6 +1,7 @@
-import { FC, useState} from 'react'
+import { FC, useState } from 'react'
 import { Col, Row, Spinner } from 'react-bootstrap'
 import { IAlpinists, getAlpinistsByCountry } from './modules/get-alpinists-by-country'
+import { useEffect } from 'react';
 import InputField from './components/InputField/InputField'
 import AlpinistCard from './components/AlpinistCard/AlpinistCard'
 import './AlpinistsPage.css'
@@ -12,7 +13,7 @@ const IAlpinistsPage: FC = () => {
 
     const [alpinists, setAlpinists] = useState<IAlpinists[]>([])
 
-    const handleSearch = async () =>{
+    const handleSearch = async () => {
         await setLoading(true)
         const { alpinists } = await getAlpinistsByCountry()
         await setAlpinists(alpinists)
@@ -20,9 +21,13 @@ const IAlpinistsPage: FC = () => {
         await setLoading(false)
     }
 
+    useEffect(() => {
+        handleSearch()
+    }, []);
+
     return (
         <div className={`container ${loading && 'containerLoading'}`}>
-            {loading && <div className="loadingBg"><Spinner animation="border"/></div>}
+            {loading && <div className="loadingBg"><Spinner animation="border" /></div>}
 
             <InputField
                 value={searchValue}
@@ -36,7 +41,7 @@ const IAlpinistsPage: FC = () => {
             </div>} */}
 
             <Row xs={4} md={4} className="g-4">
-                {alpinists.map((item, index)=> (
+                {alpinists.map((item, index) => (
                     <Col key={index}>
                         <AlpinistCard {...item} />
                     </Col>
