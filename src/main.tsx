@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import ITunesPage from './ItunesPage/ItunesPage'
+import IAlpinistsPage from './AlpinistsPage/AlpinistsPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ITunesPage/>
+    <IAlpinistsPage/>
     {/* <RouterProvider router={router} /> */}
   </React.StrictMode>,
 )

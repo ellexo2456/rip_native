@@ -1,21 +1,22 @@
 import { FC, useState} from 'react'
 import { Col, Row, Spinner } from 'react-bootstrap'
-import { ITunesMusic, getMusicByName } from './modules/get-music-by-name'
+import { IAlpinists, getAlpinistsByCountry } from './modules/get-alpinists-by-country'
 import InputField from './components/InputField/InputField'
-import MusicCard from './components/MusicCard/MusicCard'
-import './ITunesPage.css'
+import AlpinistCard from './components/AlpinistCard/AlpinistCard'
+import './AlpinistsPage.css'
 
-const ITunesPage: FC = () => {
+const IAlpinistsPage: FC = () => {
     const [searchValue, setSearchValue] = useState('')
 
     const [loading, setLoading] = useState(false)
 
-    const [music, setMusic] = useState<ITunesMusic[]>([])
+    const [alpinists, setAlpinists] = useState<IAlpinists[]>([])
 
     const handleSearch = async () =>{
         await setLoading(true)
-        const { results } = await getMusicByName(searchValue)
-        await setMusic(results.filter(item => item.wrapperType === "track"))
+        const { results } = await getAlpinistsByCountry()
+        await setAlpinists(results)
+        // await setMusic(results.filter(item => item.wrapperType === "track"))
         await setLoading(false)
     }
 
@@ -30,14 +31,14 @@ const ITunesPage: FC = () => {
                 onSubmit={handleSearch}
             />
 
-            {!music.length && <div>
+            {/* {!alpinists.length && <div>
                 <h1>К сожалению, пока ничего не найдено :(</h1>
-            </div>}
+            </div>} */}
 
             <Row xs={4} md={4} className="g-4">
-                {music.map((item, index)=> (
+                {alpinists.map((item, index)=> (
                     <Col key={index}>
-                        <MusicCard {...item} />
+                        <AlpinistCard {...item} />
                     </Col>
                 ))}
             </Row>
@@ -45,4 +46,4 @@ const ITunesPage: FC = () => {
     )
 }
 
-export default ITunesPage
+export default IAlpinistsPage
