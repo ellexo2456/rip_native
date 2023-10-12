@@ -14,8 +14,8 @@ const IAlpinistsPage: FC = () => {
 
     const handleSearch = async () =>{
         await setLoading(true)
-        const { results } = await getAlpinistsByCountry()
-        await setAlpinists(results)
+        const { alpinists } = await getAlpinistsByCountry()
+        await setAlpinists(alpinists)
         // await setMusic(results.filter(item => item.wrapperType === "track"))
         await setLoading(false)
     }

@@ -9,8 +9,7 @@ export interface IAlpinists {
 }
 
 export interface IResult {
-    resultCount: number
-    results: IAlpinists[]
+    alpinists: IAlpinists[]
 }
 
 export const getAlpinistsByCountry = async (name = ''): Promise<IResult> =>{
