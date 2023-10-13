@@ -1,6 +1,7 @@
 .inputField {
     display: flex;
     padding: 12px 0;
+    margin-bottom: 20px;
 }
 .inputField > input {
     width: 200px;
@@ -8,4 +9,9 @@
     border: 2px solid black;
     border-radius: 4px;
     outline: none;
+}
+
+.btn-custom {
+    background-color: #ea4c89 !important;
+    color: #D2DBDD !important;
 }

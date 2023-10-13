@@ -26,7 +26,7 @@ const IAlpinistsPage: FC = () => {
     }, []);
 
     return (
-        <div className={`container ${loading && 'containerLoading'}`}>
+        <div className={`my-container ${loading && 'containerLoading'}`}>
             {loading && <div className="loadingBg"><Spinner animation="border" /></div>}
 
             <InputField
@@ -42,7 +42,7 @@ const IAlpinistsPage: FC = () => {
 
             <Row xs={4} md={4} className="g-4">
                 {alpinists.map((item, index) => (
-                    <Col key={index}>
+                    <Col key={index} className="">
                         <AlpinistCard {...item} />
                     </Col>
                 ))}

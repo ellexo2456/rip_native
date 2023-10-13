@@ -12,7 +12,7 @@ interface Props {
 
 }
 
-const IAlpinistPage: FC<Props> = ({ id, description }) => {
+const IAlpinistPage: FC = () => {
     // const [searchValue, setSearchValue] = useState('')
 
     // const [loading, setLoading] = useState(false)
@@ -33,8 +33,7 @@ const IAlpinistPage: FC<Props> = ({ id, description }) => {
 
     return (
         <div>
-            {id}
-            {description}
+           sedrtfyugbinompegvoirt,pominuhygt7fr6d5ectyuinompminuybtvrcertyubinompviuybfingoy
         </div>
     )
 }
