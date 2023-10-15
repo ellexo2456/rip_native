@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 import { Col, Row, Spinner } from 'react-bootstrap'
-import { IAlpinists, getAlpinistsByCountry } from './modules/get-alpinists-by-country'
+import { getAlpinistsByCountry } from './modules/get-alpinists-by-country'
+import { IAlpinists } from "./../models/alpinist"
 import { useEffect } from 'react';
 import InputField from './components/InputField/InputField'
 import AlpinistCard from './components/AlpinistCard/AlpinistCard'

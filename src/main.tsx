@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import IAlpinistsPage from './AlpinistsPage/AlpinistsPage'
-import IAlpinistPage from './AlpinistPage/alpinistPage'
+// import IAlpinistPage from './AlpinistPage/alpinistPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BasicExample from './header';
 import { Helmet } from 'react-helmet';
