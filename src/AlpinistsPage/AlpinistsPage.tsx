@@ -18,7 +18,7 @@ const AlpinistsPage: FC = () => {
 
     const handleSearch = async () => {
         await setLoading(true)
-        const {alpinists} = await getAlpinistsByCountry()
+        const {alpinists} = await getAlpinistsByCountry(searchValue)
         await setAlpinists(alpinists)
         await setLoading(false)
     }
