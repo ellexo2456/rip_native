@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react'
+import {FC, useState} from 'react'
 import {getAlpinistById} from './modules/get-alpinist-by-id'
 import {IAlpinists} from "./../models/alpinist"
 import {useEffect} from 'react';

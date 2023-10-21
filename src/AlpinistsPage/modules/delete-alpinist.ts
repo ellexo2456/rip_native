@@ -5,5 +5,5 @@ export interface IResult {
 }
 
 export const deleteAlpinist = async (id = '') => {
-    return fetch(`http://localhost:8080/alpinist/delete?id=${id}`, {method: 'POST'})
+    return fetch(`/api/alpinist/delete?id=${id}`, {method: 'POST'})
 }

@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { Button, Card } from 'react-bootstrap'
 import './AlpinistCard.css'
 import DeleteButton from "../DeleteButton/DeleteButton.tsx";
 import {Link} from "react-router-dom";
@@ -8,18 +7,16 @@ interface Props {
     id: number
     country: string
     lifetime: string
-    description: string
     imageRef: string
-    bigImageRef: string
     name: string
     deleteHandler: (id: string) => () => Promise<void>
 }
 
-const AlpinistCard: FC<Props> = ({ deleteHandler, id, country, lifetime, description, imageRef, bigImageRef, name }) => (
+const AlpinistCard: FC<Props> = ({ deleteHandler, id, country, lifetime, imageRef, name }) => (
     <div className="my-card-wrapper">
         <article className="my-card">
             <div className="my-card__img" style={{ backgroundImage: `url(${imageRef})` }}></div>
-            <Link to={"/alpinist/" + id} className="my-card_link">
+            <Link to={"/rip_front/alpinist/" + id} className="my-card_link">
                 <div className="my-card__img--hover" style={{ backgroundImage: `url(${imageRef})` }}></div>
             </Link>
             <div className="my-card__info">

@@ -6,7 +6,7 @@ export interface IResult {
 }
 
 export const getAlpinistsByCountry = async (name = ''): Promise<IResult> => {
-    return fetch(`http://localhost:8080/?country=${name}`)
+    return fetch(`/api/?country=${name}`)
         .then((response) => response.json())
         .catch(() => ({ alpinists: alps }))
 }
