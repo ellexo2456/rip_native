@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { Button, Card } from 'react-bootstrap'
 import './AlpinistCard.css'
+import DeleteButton from "../DeleteButton/DeleteButton.tsx";
 
 interface Props {
     id: number
@@ -10,9 +11,10 @@ interface Props {
     imageRef: string
     bigImageRef: string
     name: string
+    deleteHandler: (id: string) => () => Promise<void>
 }
 
-const AlpinistCard: FC<Props> = ({ id, country, lifetime, description, imageRef, bigImageRef, name }) => (
+const AlpinistCard: FC<Props> = ({ deleteHandler, id, country, lifetime, description, imageRef, bigImageRef, name }) => (
     <div className="my-card-wrapper">
         <article className="my-card">
             <div className="my-card__img" style={{ backgroundImage: `url(${imageRef})` }}></div>
@@ -24,8 +26,10 @@ const AlpinistCard: FC<Props> = ({ id, country, lifetime, description, imageRef,
                 <h3 className="my-card__title">{name}</h3>
                 <span className="my-card__by"><a href="#" className="my-card__author" title="author">{lifetime}</a></span>
             </div>
+            <DeleteButton onSubmit={deleteHandler(String(id))} ></DeleteButton>
+
         </article>
-        
+
         {/* <form action="/service/delete" method="POST">
             <button name="id" value="{{.ID}}"></button>
         </form> */}

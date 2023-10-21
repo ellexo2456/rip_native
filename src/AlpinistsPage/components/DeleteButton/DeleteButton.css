@@ -1,0 +1,14 @@
+.delete-button {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 10px;
+    bottom: 0 !important;
+}
+
+.btn-custom {
+    background-color: #ea4c89 !important;
+    color: #fff !important;
+}

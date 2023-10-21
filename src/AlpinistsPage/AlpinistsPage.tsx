@@ -7,8 +7,9 @@ import InputField from './components/InputField/InputField'
 import AlpinistCard from './components/AlpinistCard/AlpinistCard'
 import './AlpinistsPage.css'
 import {Helmet} from 'react-helmet';
+import {deleteAlpinist} from "./modules/delete-alpinist.ts";
 
-const IAlpinistsPage: FC = () => {
+const AlpinistsPage: FC = () => {
     const [searchValue, setSearchValue] = useState('')
 
     const [loading, setLoading] = useState(false)
@@ -19,8 +20,14 @@ const IAlpinistsPage: FC = () => {
         await setLoading(true)
         const {alpinists} = await getAlpinistsByCountry()
         await setAlpinists(alpinists)
-        // await setMusic(results.filter(item => item.wrapperType === "track"))
         await setLoading(false)
+    }
+
+    const handleDeleteAlpinist = (id: string) => {
+        return async () => {
+            await deleteAlpinist(id)
+            await handleSearch()
+        }
     }
 
     useEffect(() => {
@@ -42,13 +49,15 @@ const IAlpinistsPage: FC = () => {
                     loading={loading}
                     onSubmit={handleSearch}
                 />
-                {/* {!alpinists.length && <div>
-                <h1>К сожалению, пока ничего не найдено :(</h1>
-            </div>} */}
+
+                {!alpinists.length && <div>
+                    <h1>К сожалению, пока ничего не найдено :(</h1>
+                </div>}
+
                 <Row xs={4} md={4} className="g-4">
                     {alpinists.map((item, index) => (
                         <Col key={index}>
-                            <AlpinistCard {...item} />
+                            <AlpinistCard {...item} deleteHandler={handleDeleteAlpinist}/>
                         </Col>
                     ))}
                 </Row>
@@ -58,4 +67,4 @@ const IAlpinistsPage: FC = () => {
     )
 }
 
-export default IAlpinistsPage
+export default AlpinistsPage

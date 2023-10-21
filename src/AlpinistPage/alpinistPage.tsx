@@ -5,7 +5,7 @@ import {useEffect} from 'react';
 import {Col, Row} from 'react-bootstrap'
 
 // import InputField from './components/InputField/InputField'
-// import AlpinistCard from './components/AlpinistCard/AlpinistCard'
+// import DeleteButton from './components/DeleteButton/DeleteButton'
 import './alpinistPage.css'
 import {useParams} from 'react-router-dom';
 import {Helmet} from 'react-helmet';

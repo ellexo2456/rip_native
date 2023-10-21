@@ -1,25 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import IAlpinistsPage from './AlpinistsPage/AlpinistsPage'
-import IAlpinistPage from './AlpinistPage/alpinistPage'
+import AlpinistsPage from './AlpinistsPage/AlpinistsPage'
+import AlpinistPage from './AlpinistPage/alpinistPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BasicExample from './header';
+import navbar from './header';
 import {createBrowserRouter, RouterProvider, Link, useLocation} from 'react-router-dom';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <IAlpinistsPage/>
+        element: <AlpinistsPage/>
     },
     {
         path: '/alpinist/:id',
-        element: <IAlpinistPage/>
+        element: <AlpinistPage/>
     }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        {BasicExample()}
+        {navbar()}
         <RouterProvider router={router}/>
     </React.StrictMode>,
 )
