@@ -8,12 +8,9 @@ const Breadcrumbs: React.FC = () => {
 
     return (
         <Breadcrumb>
-            {pathnames.length > 0 && (
-                <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/' }}>
-                    Home
-                </Breadcrumb.Item>
-            )}
-
+            <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/' }}>
+                Home
+            </Breadcrumb.Item>
             {pathnames.map((name, index) => {
                 const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
                 const isLast = index === pathnames.length - 1;

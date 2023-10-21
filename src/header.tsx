@@ -1,43 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './header.css'
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import {NavItem} from "react-bootstrap";
-import Breadcrumbs from "./Breadcrumbs.tsx";
-import React from "react";
+import React from 'react';
+import { Navbar } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Breadcrumbs from './Breadcrumbs';
+import AlpinistsPage from './AlpinistsPage/AlpinistsPage'
+import AlpinistPage from './AlpinistPage/alpinistPage'
 
-function navbar() {
+const App: React.FC = () => {
     return (
-        <Navbar expand="lg" className="bg-warning-subtle">
-            <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Router>
+            <Navbar bg="light" expand="lg">
+                <Navbar.Brand>My App</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider/>
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Breadcrumbs/>
-                        </Navbar.Collapse>
-                    </Nav>
+                    <Breadcrumbs/>
                 </Navbar.Collapse>
-            </Container>
-        </Navbar>
+            </Navbar>
+
+            <Routes>
+                <Route path="/" element={<AlpinistsPage/>} />
+                <Route path="/alpinist/:id" element={<AlpinistPage/>} />
+            </Routes>
+        </Router>
     );
-}
+};
 
-export default navbar;
-
+export default App;
