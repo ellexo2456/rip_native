@@ -13,6 +13,6 @@ export default defineConfig({
             }
         }
     },
-    base: "rip_front",
+    base: "/rip_front",
     plugins: [react()],
 })

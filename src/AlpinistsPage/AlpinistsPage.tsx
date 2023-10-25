@@ -57,7 +57,7 @@ const AlpinistsPage: FC = () => {
                 <Row xs={4} md={4} className="g-4">
                     {alpinists.map((item, index) => (
                         <Col key={index}>
-                            <AlpinistCard {...item} deleteHandler={handleDeleteAlpinist}/>
+                            <AlpinistCard {...item}/>
                         </Col>
                     ))}
                 </Row>

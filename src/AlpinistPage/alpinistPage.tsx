@@ -42,7 +42,7 @@ const IAlpinistPage: FC = () => {
                     </Col>
                     <Col xs={4} className={"content__column"}>
                         <a href="#">
-                            <img src={alpinist.bigImageRef} alt="Img" className={"content__image"}/>
+                            <img src={alpinist.imageRef} alt="Img" className={"content__image"}/>
                         </a>
                     </Col>
                     <Col xs={5} className={"me-5 content__column"}>

@@ -4,6 +4,5 @@ export interface IAlpinists {
     lifetime: string
     description: string
     imageRef: string
-    bigImageRef: string
     name: string
 }
