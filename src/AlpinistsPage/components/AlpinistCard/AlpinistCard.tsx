@@ -1,6 +1,6 @@
 import {FC} from 'react'
 import './AlpinistCard.css'
-import DeleteButton from "../DeleteButton/DeleteButton.tsx";
+// import DeleteButton from "../DeleteButton/DeleteButton.tsx";
 import {Link} from "react-router-dom";
 
 interface Props {

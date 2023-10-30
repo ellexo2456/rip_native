@@ -7,7 +7,7 @@ import InputField from './components/InputField/InputField'
 import AlpinistCard from './components/AlpinistCard/AlpinistCard'
 import './AlpinistsPage.css'
 import {Helmet} from 'react-helmet';
-import {deleteAlpinist} from "./modules/delete-alpinist.ts";
+// import {deleteAlpinist} from "./modules/delete-alpinist.ts";
 
 const AlpinistsPage: FC = () => {
     const [searchValue, setSearchValue] = useState('')
@@ -23,12 +23,12 @@ const AlpinistsPage: FC = () => {
         await setLoading(false)
     }
 
-    const handleDeleteAlpinist = (id: string) => {
-        return async () => {
-            await deleteAlpinist(id)
-            await handleSearch()
-        }
-    }
+    // const handleDeleteAlpinist = (id: string) => {
+    //     return async () => {
+    //         await deleteAlpinist(id)
+    //         await handleSearch()
+    //     }
+    // }
 
     useEffect(() => {
         handleSearch()
