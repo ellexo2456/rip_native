@@ -1,18 +1,27 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AlpinistsPage from './AlpinistsPage/AlpinistsPage'
 import AlpinistPage from './AlpinistPage/alpinistPage'
 import Header from "./Header.tsx";
+import { LoginPage } from './AuthorizationPage/LoginPage.tsx';
+import { RegisterPage } from './AuthorizationPage/RegisterPage.tsx';
+import { MissionPage } from './MissionsPage/MissionPage.tsx';
+import { Provider } from 'react-redux';
+import { store } from './store/store.ts';
 const App: React.FC = () => {
     return (
-        <Router>
-            <Header></Header>
-            <Routes>
-                <Route path="/rip_front" element={<AlpinistsPage/>}/>
-                <Route path="/rip_front/alpinist/:id" element={<AlpinistPage/>}/>
-            </Routes>
-        </Router>
-
+        <Provider store={store}>
+            <Router>
+                <Header></Header>
+                <Routes>
+                    <Route path="/rip_front" element={<AlpinistsPage />} />
+                    <Route path="/rip_front/alpinist/:id" element={<AlpinistPage />} />
+                    <Route path="/rip_front/login" element={<LoginPage />} />
+                    <Route path="/rip_front/register" element={<RegisterPage />} />
+                    <Route path="/rip_front/missions" element={<MissionPage />} />
+                </Routes>
+            </Router>
+        </Provider>
     );
 };
 
