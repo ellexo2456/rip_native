@@ -1,9 +1,9 @@
-import {defineConfig} from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    server: {
+  server: {
         port: 3000,
         proxy: {
             '/api':  {
@@ -13,6 +13,6 @@ export default defineConfig({
             }
         }
     },
-    base: "/rip_front",
-    plugins: [react()],
-})
+  base: "/rip_front",
+  plugins: [react()],
+});
