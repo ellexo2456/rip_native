@@ -33,6 +33,7 @@ const Header: React.FC = () => {
                             <NavLink className="dropdown-item" to="/rip_front/login">Логин</NavLink>
                             <NavLink className="dropdown-item" to="/rip_front/register">Регистрация</NavLink>
                             <NavLink className="dropdown-item" to="/rip_front/missions">Миссии</NavLink>
+                            <NavLink className="dropdown-item" to="/rip_front/history">История</NavLink>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

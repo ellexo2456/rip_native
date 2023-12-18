@@ -8,6 +8,7 @@ import { RegisterPage } from './AuthorizationPage/RegisterPage.tsx';
 import { MissionPage } from './MissionsPage/MissionPage.tsx';
 import { Provider } from 'react-redux';
 import { store } from './store/store.ts';
+import { HistoryPage } from './HistoryPage/HistoryPage.tsx';
 const App: React.FC = () => {
     return (
         <Provider store={store}>
@@ -19,6 +20,7 @@ const App: React.FC = () => {
                     <Route path="/rip_front/login" element={<LoginPage />} />
                     <Route path="/rip_front/register" element={<RegisterPage />} />
                     <Route path="/rip_front/missions" element={<MissionPage />} />
+                    <Route path="/rip_front/history" element={<HistoryPage />} />
                 </Routes>
             </Router>
         </Provider>

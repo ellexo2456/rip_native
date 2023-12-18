@@ -11,7 +11,7 @@ const Breadcrumbs: React.FC = () => {
     return (
         <Breadcrumb >
             <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/rip_front' }} >
-                Home
+                Домой
             </Breadcrumb.Item>
             {pathnames.map((name, index) => {
                 if (name == 'rip_front') {
