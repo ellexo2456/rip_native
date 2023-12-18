@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { api } from "../api/config";
 import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export const LoginPage = () => {
     const navigate = useNavigate();
@@ -38,25 +39,29 @@ export const LoginPage = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            marginTop: "50px"
         }}>
             <form onSubmit={handleLogin}
                 style={{
                     display: "flex",
-                    flexDirection: "column"
+                    flexDirection: "column",
+                    
                 }}
             >
                 <input
                     placeholder="Почта"
                     onChange={(e) => setLogin({ ...login, email: e.target.value })}
+                    style={{borderRadius: "10px", border:"0.5px solid black", padding: "5px", marginTop: "20px"}}
                 >
                 </input>
                 <input
                     placeholder="Пароль"
                     onChange={(e) => setLogin({ ...login, password: e.target.value })}
+                    style={{borderRadius: "10px", border:"0.5px solid black", padding: "5px", marginTop: "20px"}}
                 >
                 </input>
-                <button type="submit">Логин</button>
+                <Button type="submit" style={{borderRadius: "10px", padding: "5px", marginTop: "20px"}}>Логин</Button>
             </form>
         </div >
     )

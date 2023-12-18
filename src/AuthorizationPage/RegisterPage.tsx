@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { api } from "../api/config";
 import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export const RegisterPage = () => {
     const navigate = useNavigate();
@@ -9,7 +10,7 @@ export const RegisterPage = () => {
         password: '',
     })
 
-    const handleLogin = (e : any) => {
+    const handleLogin = (e: any) => {
         e.preventDefault();
         if (!login.email || !login.password) {
             return
@@ -22,15 +23,15 @@ export const RegisterPage = () => {
             email: login.email,
             password: [...byteArray],
         })
-        .then(response => {
-            console.log(response);
-            if (response.status === 200) {
-                navigate('/rip_front/');
-            }
-        })
-        .catch(error => {
-            console.error(error);
-        })
+            .then(response => {
+                console.log(response);
+                if (response.status === 200) {
+                    navigate('/rip_front/');
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
 
     return (
@@ -39,7 +40,8 @@ export const RegisterPage = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            marginTop: "50px"
         }}>
             <form onSubmit={handleLogin}
                 style={{
@@ -50,14 +52,16 @@ export const RegisterPage = () => {
                 <input
                     placeholder="Почта"
                     onChange={(e) => setLogin({ ...login, email: e.target.value })}
+                    style={{ borderRadius: "10px", border: "0.5px solid black", padding: "5px", marginTop: "20px" }}
                 >
                 </input>
                 <input
-                placeholder="Пароль"
-                onChange={(e) => setLogin({ ...login, password: e.target.value })}
+                    placeholder="Пароль"
+                    onChange={(e) => setLogin({ ...login, password: e.target.value })}
+                    style={{ borderRadius: "10px", border: "0.5px solid black", padding: "5px", marginTop: "20px" }}
                 >
                 </input>
-                <button type="submit">Зарегестрироваться</button>
+                <Button type="submit" style={{borderRadius: "10px", padding: "5px", marginTop: "20px"}}>Зарегестрироваться</Button>
             </form>
         </div >
     )
