@@ -59,6 +59,7 @@ export const LoginPage = () => {
                     placeholder="Пароль"
                     onChange={(e) => setLogin({ ...login, password: e.target.value })}
                     style={{borderRadius: "10px", border:"0.5px solid black", padding: "5px", marginTop: "20px"}}
+                    type="password"
                 >
                 </input>
                 <Button type="submit" style={{borderRadius: "10px", padding: "5px", marginTop: "20px"}}>Логин</Button>
