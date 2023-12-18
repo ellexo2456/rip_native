@@ -1,0 +1,11 @@
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/xattr-24cf1ba35d217d16.rmeta: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/error.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/mod.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/util.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/linux_macos.rs
+
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/libxattr-24cf1ba35d217d16.rlib: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/error.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/mod.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/util.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/linux_macos.rs
+
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/xattr-24cf1ba35d217d16.d: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/error.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/mod.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/util.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/linux_macos.rs
+
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/lib.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/error.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/mod.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/util.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/xattr-1.1.3/src/sys/linux_macos.rs:

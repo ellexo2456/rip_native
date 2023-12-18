@@ -1,0 +1,12 @@
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/ico-8b1afb509064f24c.rmeta: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/macros.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/bmpdepth.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/icondir.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/image.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/restype.rs
+
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/libico-8b1afb509064f24c.rlib: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/macros.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/bmpdepth.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/icondir.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/image.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/restype.rs
+
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/ico-8b1afb509064f24c.d: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/macros.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/bmpdepth.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/icondir.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/image.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/restype.rs
+
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/lib.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/macros.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/bmpdepth.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/icondir.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/image.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ico-0.3.0/src/restype.rs:

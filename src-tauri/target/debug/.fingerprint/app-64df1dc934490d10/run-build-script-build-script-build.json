@@ -1,0 +1,1 @@
+{"rustc":17942332214210601750,"features":"","target":0,"profile":0,"path":0,"deps":[[12399645807183089016,"build_script_build",false,6518001399152589715]],"local":[{"RerunIfChanged":{"output":"debug/build/app-64df1dc934490d10/output","paths":["tauri.conf.json"]}},{"RerunIfEnvChanged":{"var":"TAURI_CONFIG","val":null}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

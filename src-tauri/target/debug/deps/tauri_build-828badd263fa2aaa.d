@@ -1,0 +1,10 @@
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/tauri_build-828badd263fa2aaa.rmeta: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/allowlist.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/static_vcruntime.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/window-app-manifest.xml
+
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/libtauri_build-828badd263fa2aaa.rlib: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/allowlist.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/static_vcruntime.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/window-app-manifest.xml
+
+/Users/aleksej/Projects/RIpPeakFront/my-app/src-tauri/target/debug/deps/tauri_build-828badd263fa2aaa.d: /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/lib.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/allowlist.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/static_vcruntime.rs /Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/window-app-manifest.xml
+
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/lib.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/allowlist.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/static_vcruntime.rs:
+/Users/aleksej/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tauri-build-1.5.0/src/window-app-manifest.xml:
