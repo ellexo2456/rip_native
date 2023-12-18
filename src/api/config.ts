@@ -6,7 +6,6 @@ api.interceptors.response.use(
     (error) => {
         const { response } = error;
         if (response && response.status === 401) {
-            // window.localStorage.removeItem("jwtToken")
             window.location.href = "/"
         } else if (response && response.status === 403) {
             window.location.href = "/"
