@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AlpinistsPage from "./AlpinistsPage/AlpinistsPage";
 import AlpinistPage from "./AlpinistPage/alpinistPage";
 import Header from "./Header.tsx";
+import Breadcrumbs from "./Breadcrumbs.tsx";
 import { invoke } from "@tauri-apps/api";
+
 const App: React.FC = () => {
-  useEffect(() => {
+    useEffect(() => {
     // Create a new Tauri window
     invoke("tauri", { cmd: "create" })
       .then((response: any) => console.log(response))
@@ -22,6 +24,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Header></Header>
+        <Breadcrumbs/>
       <Routes>
         <Route path="/rip_front" element={<AlpinistsPage />} />
         <Route path="/rip_front/alpinist/:id" element={<AlpinistPage />} />
