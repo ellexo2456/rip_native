@@ -11,7 +11,7 @@ const Breadcrumbs: React.FC = () => {
     return (
         <Breadcrumb className={"bread-crumbs_container"}>
             <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/rip_front' }} >
-                Домо
+                Главная
             </Breadcrumb.Item>
             {pathnames.map((name, index) => {
                 if (name == 'rip_front') {
@@ -26,7 +26,7 @@ const Breadcrumbs: React.FC = () => {
 
                 return isLast || name == 'alpinist' ? (
                     <Breadcrumb.Item active key={name}>
-                        {name}
+                        {name.replace(/alpinist/g, 'альпинист')}
                     </Breadcrumb.Item>
                 ) : (
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: routeTo }} key={name}>
