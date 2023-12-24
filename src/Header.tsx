@@ -1,5 +1,4 @@
-import { Navbar } from 'react-bootstrap';
-import Breadcrumbs from './Breadcrumbs';
+import {Navbar} from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -38,12 +37,12 @@ const Header: React.FC = () => {
                     </Nav>
                 </Navbar.Collapse>
 
-                <Navbar.Collapse id="basic-navbar-nav" className={"d-flex justify-content-end"}>
-                    <Nav className="pt-3">
-                        <Breadcrumbs />
-                    </Nav>
+                {/*<Navbar.Collapse id="basic-navbar-nav" className={"d-flex justify-content-end"}>*/}
+                {/*    <Nav className="pt-3">*/}
+                {/*        <Breadcrumbs/>*/}
+                {/*    </Nav>*/}
 
-                </Navbar.Collapse>
+                {/*</Navbar.Collapse>*/}
             </Container>
         </Navbar>
     );

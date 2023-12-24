@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AlpinistsPage from './AlpinistsPage/AlpinistsPage'
 import AlpinistPage from './AlpinistPage/alpinistPage'
 import Header from "./Header.tsx";
+import Breadcrumbs from "./Breadcrumbs.tsx";
+
 import { LoginPage } from './AuthorizationPage/LoginPage.tsx';
 import { RegisterPage } from './AuthorizationPage/RegisterPage.tsx';
 import { MissionPage } from './MissionsPage/MissionPage.tsx';
@@ -14,6 +16,7 @@ const App: React.FC = () => {
         <Provider store={store}>
             <Router>
                 <Header></Header>
+                <Breadcrumbs/>
                 <Routes>
                     <Route path="/rip_front" element={<AlpinistsPage />} />
                     <Route path="/rip_front/alpinist/:id" element={<AlpinistPage />} />
