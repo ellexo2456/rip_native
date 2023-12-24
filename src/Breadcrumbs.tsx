@@ -9,9 +9,9 @@ const Breadcrumbs: React.FC = () => {
     const pathnames = location.pathname.split('/').filter((x) => x);
 
     return (
-        <Breadcrumb >
+        <Breadcrumb className={"bread-crumbs_container"}>
             <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/rip_front' }} >
-                Home
+                Домо
             </Breadcrumb.Item>
             {pathnames.map((name, index) => {
                 if (name == 'rip_front') {

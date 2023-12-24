@@ -3,10 +3,13 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import AlpinistsPage from './AlpinistsPage/AlpinistsPage'
 import AlpinistPage from './AlpinistPage/alpinistPage'
 import Header from "./Header.tsx";
+import Breadcrumbs from "./Breadcrumbs.tsx";
+
 const App: React.FC = () => {
     return (
         <Router>
             <Header></Header>
+            <Breadcrumbs/>
             <Routes>
                 <Route path="/rip_front" element={<AlpinistsPage/>}/>
                 <Route path="/rip_front/alpinist/:id" element={<AlpinistPage/>}/>
