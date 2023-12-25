@@ -16,12 +16,12 @@ const Header: React.FC = () => {
                         AlpLib
                     </Link>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                {/*<Navbar.Toggle aria-controls="basic-navbar-nav"/>*/}
+                {/*<Navbar.Collapse id="basic-navbar-nav">*/}
+                    {/*<Nav className="me-auto">*/}
                         {/*<Nav.Link href="#home">Home</Nav.Link>*/}
                         {/*<Nav.Link href="#link">Link</Nav.Link>*/}
-                        <NavDropdown title="Menu" id="basic-nav-dropdown">
+                        {/*<NavDropdown title="Menu" id="basic-nav-dropdown">*/}
                             {/*<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>*/}
                             {/*<NavDropdown.Item href="#action/3.2">*/}
                             {/*    Another action*/}
@@ -31,9 +31,9 @@ const Header: React.FC = () => {
                             {/*<NavDropdown.Item href="#action/3.4">*/}
                             {/*    Separated link*/}
                             {/*</NavDropdown.Item>*/}
-                        </NavDropdown>
-                    </Nav>
-                </Navbar.Collapse>
+                        {/*</NavDropdown>*/}
+                    {/*</Nav>*/}
+                {/*</Navbar.Collapse>*/}
 
                 {/*<Navbar.Collapse id="basic-navbar-nav" className={"d-flex justify-content-end"}>*/}
                 {/*    <Nav className="pt-3">*/}
