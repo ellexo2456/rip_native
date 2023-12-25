@@ -21,11 +21,12 @@ export const LoginPage = () => {
 
         api.post(`/auth/login`, {
             email: login.email,
-            password: byteArray,
+            password: [...byteArray],
         })
             .then(response => {
+                console.log(response);
                 if (response.status === 200) {
-                    navigate('rip_front/')
+                    navigate('/rip_front/')
                 }
             })
             .catch(error => {
